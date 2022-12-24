@@ -6,13 +6,8 @@ if(!isset($login_session)){
 header('Location: managerlogin.php'); 
 }
 
-
-
-// $email = $conn->real_escape_string($_POST['email']);
 $id = $conn->real_escape_string($_POST['id']);
 $nombre = $conn->real_escape_string($_POST['name']);
-// $address = $conn->real_escape_string($_POST['address']);
-
 
 $query = "INSERT INTO proveedor VALUES('$id','$nombre')";
 $success = $conn->query($query);
