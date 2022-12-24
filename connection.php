@@ -17,7 +17,7 @@ function Connect()
 	// $dbname = "restaurant";
 
 	//Create Connection
-	$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname) or die($conn->connect_error);
+	$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname, $port) or die($conn->connect_error);
 
 	return $conn;
 }
