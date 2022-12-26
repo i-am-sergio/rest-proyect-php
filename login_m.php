@@ -1,5 +1,5 @@
 <?php
-//session_start(); 
+session_start(); 
 $error=''; 
 
 if (isset($_POST['submit'])) {

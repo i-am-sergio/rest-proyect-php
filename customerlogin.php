@@ -1,8 +1,8 @@
     <?php
+include('login_u.php'); 
 
 if(isset($_SESSION['login_user2'])){
-  include('login_u.php'); 
-//header("location: foodlist.php"); 
+  header("location: foodlist.php"); 
 }
 ?>
 
